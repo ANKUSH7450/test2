@@ -2,10 +2,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>$URANUS</title>
+    <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+ 
     <style>
         .header{
             font-size: 15px;
@@ -37,8 +40,53 @@
             min-height: 260px;
         }
     </style>
+    <script>
+        function f1() {
+            document.getElementById("id1").style.backgroundColor="green";
+            
+        }
+        function f2() {
+            document.getElementById("id1").style.backgroundColor=" rgb(45, 44, 44)";
+            
+        }
+        
+           function f3()
+           {
+            const typed = new Typed(".typeds",{
+                strings: ['&nbsp; WELCOME TO URANUS','&nbsp;&nbsp; ENJOY TH FUN'],
+                typeSpeed:50,
+                backSpeed:50,
+                backDelay:1000,
+                loop:true
+
+            })
+           }
+           function f4()
+           {
+            const typed = new Typed(".typedspar",{
+                strings: ["Uranus is the community-run technology powering the cryptocurrency uranus (URN) and thousands of decentralized applications"],
+                typeSpeed:50,
+                backSpeed:0.1,
+                backDelay:10000,
+                loop:true
+
+            })
+           }
+           function f5()
+           {
+            const typed = new Typed(".typedank",{
+                strings: ["CREATED BY ANKUSH SINGH"],
+                typeSpeed:40,
+                backSpeed:40,
+                backDelay:1000,
+                loop:true
+
+            })
+           }
+        
+    </script>
 </head>
-<body>
+<body onload="f3() , f4(),f5()" >
 <header>
        <nav>
         <div class="container-fluid">
@@ -50,7 +98,7 @@
                 <div class="col-md-1 mg "  ><a class="header" href="profile.html">Research</a></div>
                 <div class="col-md-2 mg "  > </div>
                 <div class="col-md-2 mg "  ><form action="#"> <input type="search" placeholder="Search" class="form-control" ></form> </div>
-                <div class="col-md-3 mg "  ><a class="header" href="profile.html">CREATED BY ANKUSH SINGH</a></div>
+                <div class="col-md-3 mg "  ><a class="header typedank " href="profile.html"></a></div>
                 
             </div>
         </div>
@@ -63,24 +111,26 @@
         <div class="container-fluid">
             <div class="row bgs wheight" >
                 <div class="col-md-3 " ></div>
-                <div class="col-md-6 " > <H1 class="h">&nbsp; WELCOME TO URANUS &nbsp;</H1><br>
-                <p class="P1" >Uranus is the community-run technology powering the cryptocurrency uranus (URN) and thousands of decentralized applications.</p><br>
-            <a href="#"><BUtton style="margin-left: 25%;background: rgb(38, 158, 219);color: rgb(6, 46, 6);font-weight: bold;font-family: 'Times New Roman', Times, serif;" >EXPLORE URANUS</BUtton></a></div>
-                <div class="col-md-3 " ></div>
+                <div class="col-md-6 " > <span class="typeds" style="color: aqua;font-style: italic;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size: 40px;"></span> <br><br>
+                    <span class="typedspar P1"  ></span>
+                <br>
+           </div>
+                <!-- <div class="col-md-3 " > <a href="#"><BUtton style="margin-left: 25%;background: rgb(38, 158, 219);color: rgb(6, 46, 6);font-weight: bold;font-family: 'Times New Roman', Times, serif;" >EXPLORE URANUS</BUtton></a></div> -->
             </div>
         </div>
     </section>
-   <section>
+   <section onmouseover="f1()" onmouseout="f2()" >
     <div class="container-fluid">
-        <div class="row bgs2 wheight">
+        <div class="row bgs2 wheight" id="id1" >
             <div class="col-md-1" ></div>
-            <div class="col-md-6">
-                <h1 class="h" >Get started</h1><br>
+            <div class="col-md-6"  >
+                <h1 class="h typed" >Get Started</h1>
                 <p class="P1" >Uranus.org is your portal into the world of Uranus. The tech is new and ever-evolving – it helps to have a guide. Here's what we recommend you do if you want to dive in.</p>
             </div>
             <div class="col-md-4"><img src="https://ethereum.org/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fhackathon_transparent.0818b178.png&w=750&q=75" alt="error" height="250px"></div>
         </div>
     </div>
    </section>
+  
 </body>
 </html>
