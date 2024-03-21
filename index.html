@@ -1,168 +1,144 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
- 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
     <style>
-        .header{
-            font-size: 15px;
-            font-weight: bolder;
-            color: whitesmoke;  
+        * {
+            padding: 0;
+            margin: 1;
+            box-sizing: border-box;
+
         }
-        .mg{
-            margin-top: 10px;
+
+        body {
+            overflow-x: hidden;
         }
-        .h{
-            font-size: 35px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            color: white;
+
+        h1 {
+            font-family: "Dancing Script", cursive;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
         }
-        .P1{
-            color: antiquewhite;
-            font-size: 20px;
-        }
-        .bgh{
-            background: black;min-height: 30px;
-        }
-        .bgs{
-            background: black;
-        }
-        .bgs2{
-            background: rgb(45, 44, 44);
-        }
-        .wheight{
-            min-height: 260px;
-        }
-        .imgstyle{
-            min-height: 240px ;
-            background-color: black;
-            
-        }
-        .imgbdr{
-            border: 4px solid red;
-            margin-top: 10px;
-            height: 200px;
-            
-        }
-        .imgbdr:hover{
-            border: 4px solid green;
-            margin-top: 10px;
-            height: 210px;
-        }
-        .bgc{
-            min-height: 240px ;
-            background-image: black;
+
+        .carousel-item img {
+            width: 100%;
+            height: 80vh;
+
         }
     </style>
-    <script>
-        function f1() {
-            document.getElementById("id1").style.backgroundColor="green";
-            
-        }
-        function f2() {
-            document.getElementById("id1").style.backgroundColor=" rgb(45, 44, 44)";
-            
-        }
-        
-           function f3()
-           {
-            const typed = new Typed(".typeds",{
-                strings: ['&nbsp; WELCOME TO URANUS','&nbsp;&nbsp; ENJOY TH FUN'],
-                typeSpeed:50,
-                backSpeed:50,
-                backDelay:1000,
-                loop:true
-
-            })
-           }
-           function f4()
-           {
-            const typed = new Typed(".typedspar",{
-                strings: ["Uranus is the community-run technology powering the cryptocurrency uranus (URN) and thousands of decentralized applications"],
-                typeSpeed:50,
-                backSpeed:0.1,
-                backDelay:10000,
-                loop:true
-
-            })
-           }
-           function f5()
-           {
-            const typed = new Typed(".typedank",{
-                strings: ["CREATED BY ANKUSH SINGH"],
-                typeSpeed:40,
-                backSpeed:40,
-                backDelay:1000,
-                loop:true
-
-            })
-           }
-        
-    </script>
 </head>
-<body onload="f3() , f4(),f5()" >
-<header>
-       
-        <div class="container">
-            <div class="row bgh" >
-                <div class="col-md-1 mg  "  ><a class="header" href="profile.html">Learn</a></div>
-                <div class="col-md-1 mg "  ><a class="header" href="profile.html">Use</a></div>
-                <div class="col-md-1 mg "  ><a class="header" href="profile.html">Build</a></div>
-                <div class="col-md-1 mg "  ><a class="header" href="profile.html">Participate</a></div>
-                <div class="col-md-1 mg "  ><a class="header" href="profile.html">Research</a></div>
-                <div class="col-md-2 mg "  > </div>
-                <div class="col-md-2 mg "  ><form action="#"> <input type="search" placeholder="Search" class="form-control" ></form> </div>
-                <div class="col-md-3 mg "  ><a class="header typedank " href="profile.html"></a></div>
-                
+
+<body>
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light  bg-white  px-4 border-bottom border-top border-danger   ">
+            <a class="navbar-brand h1  " href="#">$ <span class="text-primary">Uranus</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon bg-primary  "></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto text-center   ">
+                    <li class="nav-item active">
+                        <a class="nav-link text-primary  " href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item  " href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+
             </div>
-        </div>
-       
+        </nav>
     </header>
+
     <section>
-       
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12" style="min-height: 550px;background-image: url('https://static.cryptobriefing.com/wp-content/uploads/2018/08/02100417/Uranus-ICO-Review-and-URAC-Token-Analysis-by-Crypto-Briefing.jpg');background-repeat: none;background-size: auto;background-attachment: scroll;">
-            
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1639815188546-c43c240ff4df?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block d-sm-block d-block d-lg-block  ">
+                        <h5>First slide label</h5>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://media.istockphoto.com/id/1426440112/photo/artificial-micro-model-fabric-texture-imitation-of-the-universe-nebula-and-moon-model.jpg?s=2048x2048&w=is&k=20&c=x83TVlNrRNXDOMkROqFeKCdD075b3cxYVOeOfGcDx7I="
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block d-sm-block d-block d-lg-block ">
+                        <h5>Second slide label</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://media.istockphoto.com/id/1358389594/photo/futuristic-play-to-earn-concept.jpg?s=2048x2048&w=is&k=20&c=WpqvSfQ2APJ5nwjHMO19B14gv4Sd_g5gxvH9Y3f_MGg="
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block d-sm-block d-block d-lg-block ">
+                        <h5>Third slide label</h5>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
                 </div>
             </div>
-            <div class="row bgs wheight" >
-                <div class="col-md-3 " ></div>
-                <div class="col-md-6 " > <span class="typeds" style="color: aqua;font-style: italic;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size: 40px;"></span> <br><br>
-                    <span class="typedspar P1"  ></span>
-                <br>
-                </div>
-                <!-- <div class="col-md-3 " > <a href="#"><BUtton style="margin-left: 25%;background: rgb(38, 158, 219);color: rgb(6, 46, 6);font-weight: bold;font-family: 'Times New Roman', Times, serif;" >EXPLORE URANUS</BUtton></a></div> -->
-            </div>
-       
-
-  
-        <div class="row bgs2 wheight" id="id1"  onmouseover="f1()" onmouseout="f2()"    >
-            <div class="col-md-1" ></div>
-            <div class="col-md-6"  >
-                <h1 class="h typed" >Get Started</h1>
-                <p class="P1" >Uranus.org is your portal into the world of Uranus. The tech is new and ever-evolving – it helps to have a guide. Here's what we recommend you do if you want to dive in.</p>
-            </div>
-            <div class="col-md-4"><img src="https://ethereum.org/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fhackathon_transparent.0818b178.png&w=750&q=75" alt="error" height="250px"></div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only ">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-   
+    
+    </section>
 
- 
-        <div class="row "  >
-            <div class="col-md-1 imgstyle " ></div>
-            <div class="col-md-4 imgstyle"  ><img class="imgbdr" src="https://media.istockphoto.com/id/615080812/photo/uranus-planet-including-elements-furnished-by-nasa.jpg?s=2048x2048&w=is&k=20&c=4X76nHPOXtNqPAHgH51UHrJU83hnjp5KMfCGoQVd6-w=" alt="error"  ></div>
-            <div class="col-md-2 imgstyle " ></div>
-            <div class="col-md-4 imgstyle" ><img class="imgbdr" src="https://media.istockphoto.com/id/1426440112/photo/artificial-micro-model-fabric-texture-imitation-of-the-universe-nebula-and-moon-model.jpg?s=2048x2048&w=is&k=20&c=x83TVlNrRNXDOMkROqFeKCdD075b3cxYVOeOfGcDx7I=" alt="error"  ></div>
-            <div class="col-md-1 imgstyle " ></div>
-            
-        </div> 
-    </div>
-  </section>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
